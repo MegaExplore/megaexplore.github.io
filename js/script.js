@@ -20,7 +20,7 @@ form.addEventListener("submit", async (e) => {
   status.innerHTML = "Sending...";
 
   try {
-    const response = await fetch("https://YOUR_WORKER_SUBDOMAIN.workers.dev/send-email", {
+    const response = await fetch("megalibertacontactform.chrisperolla.workers.dev/send-email", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data)
