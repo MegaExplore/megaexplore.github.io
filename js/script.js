@@ -1,4 +1,4 @@
-const response = await fetch("https://your-worker-name.username.workers.dev/send-email", {
+const response = await fetch("https://megalibertacontactform.chrisperolla.workers.dev//send-email", {
   method: "POST",
   headers: { "Content-Type": "application/json" },
   body: JSON.stringify({
