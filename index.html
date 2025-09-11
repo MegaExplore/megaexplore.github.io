@@ -3,13 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us</title>
+  <title>My Website</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
-  <div class="contact-container">
-    <h1>Contact Us</h1>
+  <!-- Header -->
+  <header>
+    <h1>Welcome to My Website</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>This is a sample static website served from GitHub Pages.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
     <form id="contact-form">
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" required>
@@ -20,13 +36,17 @@
       <label for="message">Message:</label>
       <textarea id="message" name="message" rows="5" required></textarea>
 
-      <!-- Google reCAPTCHA -->
       <div class="g-recaptcha" data-sitekey="6LcdY8YrAAAAAJQwuOJtx914p4gvPvKY7xAdOZD7"></div>
 
       <button type="submit">Send Message</button>
     </form>
     <div id="status"></div>
-  </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 My Website</p>
+  </footer>
 
   <script src="js/script.js"></script>
 </body>
