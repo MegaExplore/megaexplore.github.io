@@ -3,10 +3,25 @@
   <input type="email" name="email" placeholder="Email" required>
   <textarea name="message" placeholder="Message" required></textarea>
 
-  <div class="g-recaptcha" data-sitekey="6LfhXMcrAAAAACoW5p2fE_H4jOarfRtsNinFkCuf"></div>
+  <!-- Hidden field for reCAPTCHA v3 token -->
+  <input type="hidden" id="recaptchaToken" name="recaptcha_token">
 
   <button type="submit">Send</button>
 </form>
 
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<!-- Load reCAPTCHA v3 -->
+<script src="https://www.google.com/recaptcha/api.js?render=YOUR_SITE_KEY"></script>
+<script>
+  const form = document.getElementById('contactForm');
+  form.addEventListener('submit', function (event) {
+    event.preventDefault(); // stop normal submit
+
+    grecaptcha.ready(function() {
+      grecaptcha.execute('YOUR_SITE_KEY', {action: 'submit'}).then(function(token) {
+        document.getElementById('recaptchaToken').value = token;
+        form.submit(); // now submit with the token included
+      });
+    });
+  });
+</script>
 
