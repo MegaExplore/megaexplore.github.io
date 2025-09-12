@@ -10,16 +10,16 @@
 </form>
 
 <!-- Load reCAPTCHA v3 -->
-<script src="https://www.google.com/recaptcha/api.js?render=6LfhXMcrAAAAACoW5p2fE_H4jOarfRtsNinFkCuf"></script>
+<script src="https://www.google.com/recaptcha/api.js?render=YOUR_SITE_KEY"></script>
 <script>
   const form = document.getElementById('contactForm');
-  form.addEventListener('submit', function (event) {
-    event.preventDefault(); // stop normal submit
 
+  form.addEventListener('submit', function(e) {
+    e.preventDefault(); // stop normal submit
     grecaptcha.ready(function() {
-      grecaptcha.execute('6LfhXMcrAAAAACoW5p2fE_H4jOarfRtsNinFkCuf', {action: 'submit'}).then(function(token) {
+      grecaptcha.execute('YOUR_SITE_KEY', {action: 'submit'}).then(function(token) {
         document.getElementById('recaptchaToken').value = token;
-        form.submit(); // now submit with the token included
+        form.submit(); // submit only after token is added
       });
     });
   });
