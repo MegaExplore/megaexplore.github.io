@@ -5,25 +5,21 @@ document.addEventListener("DOMContentLoaded", () => {
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
     status.textContent = "Sending...";
-    
-    try {
-      // Get Turnstile token
-      const turnstileToken = await new Promise((resolve, reject) => {
-        const widget = document.getElementById("cf-turnstile-widget"); // fix container
-        if (!widget) return reject("Turnstile widget not found");
 
-        turnstile.execute(widget, {
-          async: true,
-          callback: resolve,
-          errorCallback: reject
-        });
+    try {
+      const token = await new Promise((resolve, reject) => {
+        if (window.turnstile) {
+          turnstile.execute("#cf-turnstile-widget", { action: "submit" })
+            .then(resolve)
+            .catch(reject);
+        } else {
+          reject("Turnstile not loaded");
+        }
       });
 
-      // Prepare form data
       const formData = new FormData(form);
-      formData.append("cf-turnstile-response", turnstileToken);
+      formData.append("cf-turnstile-response", token);
 
-      // Send to Cloudflare Worker
       const response = await fetch("/send-email", {
         method: "POST",
         body: formData
@@ -34,14 +30,13 @@ document.addEventListener("DOMContentLoaded", () => {
       if (response.ok) {
         status.textContent = "Message sent successfully!";
         form.reset();
-        turnstile.reset(); // reset Turnstile widget
+        turnstile.reset("#cf-turnstile-widget"); // reset widget
       } else {
-        console.error("Worker error:", result);
-        status.textContent = result.error || "Something went wrong.";
+        status.textContent = "Error: " + (result.error || "Something went wrong.");
       }
     } catch (err) {
-      console.error("Fetch error:", err);
-      status.textContent = "Failed to send message.";
+      console.error(err);
+      status.textContent = "Fetch error: " + err;
     }
   });
 });
