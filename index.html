@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Form</title>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+</head>
+<body>
+  <h1>Contact Us</h1>
+  <form id="contactForm">
+    <input type="text" name="name" placeholder="Your name" required />
+    <input type="email" name="email" placeholder="Your email" required />
+    <textarea name="message" placeholder="Your message" required></textarea>
+
+    <!-- Turnstile widget -->
+    <div class="cf-turnstile" data-sitekey="0x4AAAAAAB0yABbBESa9OU4J"></div>
+
+    <button type="submit">Send</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
