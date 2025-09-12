@@ -1,3 +1,4 @@
+
 <form id="contactForm" method="POST" action="https://megalibertacontactform.chrisperolla.workers.dev/">
   <input type="text" name="name" placeholder="Name" required>
   <input type="email" name="email" placeholder="Email" required>
@@ -10,16 +11,16 @@
 </form>
 
 <!-- Load reCAPTCHA v3 -->
-<script src="https://www.google.com/recaptcha/api.js?render=YOUR_SITE_KEY"></script>
+<script src="https://www.google.com/recaptcha/api.js?render=6LfhXMcrAAAAACoW5p2fE_H4jOarfRtsNinFkCuf"></script>
 <script>
   const form = document.getElementById('contactForm');
 
   form.addEventListener('submit', function(e) {
-    e.preventDefault(); // stop normal submit
+    e.preventDefault();
     grecaptcha.ready(function() {
-      grecaptcha.execute('YOUR_SITE_KEY', {action: 'submit'}).then(function(token) {
+      grecaptcha.execute('YOUR_REAL_SITE_KEY', {action: 'submit'}).then(function(token) {
         document.getElementById('recaptchaToken').value = token;
-        form.submit(); // submit only after token is added
+        form.submit();
       });
     });
   });
