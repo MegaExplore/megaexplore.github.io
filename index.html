@@ -1,28 +1,60 @@
+<!-- Contact Form -->
+<div id="contact-container" style="max-width:500px;margin:auto;font-family:Arial,sans-serif;">
+  <h2>Contact Us</h2>
+  <form id="contact-form">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Your Name" required style="width:100%;padding:8px;margin-bottom:10px;">
 
-<form id="contactForm" method="POST" action="https://megalibertacontactform.chrisperolla.workers.dev/">
-  <input type="text" name="name" placeholder="Name" required>
-  <input type="email" name="email" placeholder="Email" required>
-  <textarea name="message" placeholder="Message" required></textarea>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Your Email" required style="width:100%;padding:8px;margin-bottom:10px;">
 
-  <!-- Hidden field for reCAPTCHA v3 token -->
-  <input type="hidden" id="recaptchaToken" name="recaptcha_token">
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Your Message" required style="width:100%;padding:8px;margin-bottom:10px;"></textarea>
 
-  <button type="submit">Send</button>
-</form>
+    <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
+    <button type="submit" style="padding:10px 20px;background-color:#007bff;color:white;border:none;cursor:pointer;">Send Message</button>
+  </form>
 
-<!-- Load reCAPTCHA v3 -->
-<script src="https://www.google.com/recaptcha/api.js?render=6LfhXMcrAAAAACoW5p2fE_H4jOarfRtsNinFkCuf"></script>
+  <div id="form-result" style="margin-top:15px;font-weight:bold;"></div>
+</div>
+
+<!-- reCAPTCHA v3 -->
+<script src="https://www.google.com/recaptcha/api.js?render=YOUR_SITE_KEY"></script>
+
 <script>
-  const form = document.getElementById('contactForm');
-
-  form.addEventListener('submit', function(e) {
+document.getElementById('contact-form').addEventListener('submit', function(e) {
     e.preventDefault();
+    const resultDiv = document.getElementById('form-result');
+    resultDiv.style.color = 'black';
+    resultDiv.innerText = 'Sending...';
+
     grecaptcha.ready(function() {
-      grecaptcha.execute('6LfhXMcrAAAAACoW5p2fE_H4jOarfRtsNinFkCuf', {action: 'submit'}).then(function(token) {
-        document.getElementById('recaptchaToken').value = token;
-        form.submit();
-      });
+        grecaptcha.execute('6LcVKcorAAAAAL0ARL06YWmUvnKqZAAPT_E9sukN', {action: 'contact'}).then(function(token) {
+            document.getElementById('g-recaptcha-response').value = token;
+
+            const formData = new FormData(e.target);
+
+            fetch('https://contact.megaliberta.com/contact.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === 'success') {
+                    resultDiv.style.color = 'green';
+                    e.target.reset();
+                } else {
+                    resultDiv.style.color = 'red';
+                }
+                resultDiv.innerText = data.message;
+            })
+            .catch(err => {
+                resultDiv.style.color = 'red';
+                resultDiv.innerText = 'An error occurred. Please try again.';
+                console.error(err);
+            });
+        });
     });
-  });
+});
 </script>
 
