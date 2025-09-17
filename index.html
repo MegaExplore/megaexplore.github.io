@@ -453,22 +453,9 @@ Invest smartly, stay informed, and your possibilities are limitless! 💎
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-</body>
-
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- reCAPTCHA v3 -->
+    
+    
+    <!-- reCAPTCHA v3 -->
 <script src="https://www.google.com/recaptcha/api.js?render=6LcVKcorAAAAAL0ARL06YWmUvnKqZAAPT_E9sukN"></script>
 
 <script>
@@ -507,4 +494,36 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
     });
 });
 </script>
+
+      <!-- redirect to /home etc -->
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const path = window.location.pathname.replace(/^\/+|\/+$/g, ""); // remove leading/trailing slashes
+
+  if (path) {
+    const section = document.getElementById(path.toUpperCase());
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+});
+</script>
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
 
