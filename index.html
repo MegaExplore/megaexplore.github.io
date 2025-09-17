@@ -497,18 +497,35 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
 </script>
 
       <!-- redirect to /home etc -->
-    <script>
+ 
+<script>
 document.addEventListener("DOMContentLoaded", () => {
-  const path = window.location.pathname.replace(/^\/+|\/+$/g, ""); // remove leading/trailing slashes
+  // Intercept clicks on links
+  document.querySelectorAll('a[href^="/"]').forEach(link => {
+    link.addEventListener("click", function (e) {
+      const path = this.getAttribute("href").replace(/^\/+|\/+$/g, "").toUpperCase();
+      const section = document.getElementById(path);
 
-  if (path) {
-    const section = document.getElementById(path.toUpperCase());
+      if (section) {
+        e.preventDefault(); // stop full page reload
+        history.pushState(null, "", "/" + path); // change URL
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    });
+  });
+
+  // Handle direct visits like /INVEST, /ABOUT, /CONTACT
+  const currentPath = window.location.pathname.replace(/^\/+|\/+$/g, "").toUpperCase();
+  if (currentPath) {
+    const section = document.getElementById(currentPath);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
   }
 });
 </script>
+
+
 
 
 
