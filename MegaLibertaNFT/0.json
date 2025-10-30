@@ -1,0 +1,10 @@
+{
+  "name": "MegaLiberta #0",
+  "description": "The first NFT in the MegaLiberta collection",
+  "image": "https://megaliberta.com/img/favicon.png",
+  "attributes": [
+    { "trait_type": "Background", "value": "Blue" },
+    { "trait_type": "Rarity", "value": "Legendary" }
+  ]
+}
+
