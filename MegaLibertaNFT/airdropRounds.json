@@ -1,7 +1,8 @@
 [
   {
-    "roundName": "Airdrop-1",
-    "root": "0x01390f0de4b397803b6fd74bc5c83d11fe5ed170ae7a6fc9a2538c69c93a55f8",
+    "roundName": "Airdrop-1 (REBUILT WITH ID 0)",
+    "root": "0x76ae7fa68fbab92c80e587bb195ac957370727f07e57eedbc44371620cb13407",
+    "roundID": "0",
     "claims": [
       {
         "address": "0x1f034A26e252B452ef1C244b441534084FF06A90",
