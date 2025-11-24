@@ -11,5 +11,18 @@
         "proof": []
       }
     ]
+  },
+  {
+    "roundName": "AirdropRound2",
+    "salt": "1763982252485",
+    "root": "0x9f1704a1a64fc849b5b67917d29b8567cbe0b89fe84fc4d7db0490a17bb636ad",
+    "claims": [
+      {
+        "address": "0x1f034A26e252B452ef1C244b441534084FF06A90",
+        "amount": "5215000",
+        "salt": "1763982252485",
+        "proof": []
+      }
+    ]
   }
 ]
