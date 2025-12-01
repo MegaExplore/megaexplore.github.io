@@ -1,8 +1,9 @@
+
 [
   {
     "roundName": "AirdropRound2",
     "salt": "0x5b2d9b1bad2392cff7f3678ba1fd006e4837bc3e3e58f19cbec5265e0b71b814",
-    "root": "0x0deeee59a0a9240f6b4147306ffaf9a53356ae7fb447c4c6f6df7c1c14b2cc14",
+    "root": "0x664c92ed34e44a5fd79a6befd8804194e48b269d310271b604f2a3613b98b17a",
     "claims": [
       {
         "index": 0,
