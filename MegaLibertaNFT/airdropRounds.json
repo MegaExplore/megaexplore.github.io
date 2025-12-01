@@ -1,26 +1,14 @@
 [
   {
-    "roundName": "AirdropRound1",
-    "salt": "1763570773353",
-    "root": "0xb4e9be88395470c799387ff71a88628a086602993a12dad2192c6da37df92e2a",
-    "claims": [
-      {
-        "address": "0x1f034A26e252B452ef1C244b441534084FF06A90",
-        "amount": "5215000",
-        "salt": "1763570773353",
-        "proof": []
-      }
-    ]
-  },
-  {
     "roundName": "AirdropRound2",
-    "salt": "1763982252485",
-    "root": "0x9f1704a1a64fc849b5b67917d29b8567cbe0b89fe84fc4d7db0490a17bb636ad",
+    "salt": "0x5b2d9b1bad2392cff7f3678ba1fd006e4837bc3e3e58f19cbec5265e0b71b814",
+    "root": "0x0deeee59a0a9240f6b4147306ffaf9a53356ae7fb447c4c6f6df7c1c14b2cc14",
     "claims": [
       {
+        "index": 0,
         "address": "0x1f034A26e252B452ef1C244b441534084FF06A90",
         "amount": "5215000",
-        "salt": "1763982252485",
+        "salt": "0x5b2d9b1bad2392cff7f3678ba1fd006e4837bc3e3e58f19cbec5265e0b71b814",
         "proof": []
       }
     ]
