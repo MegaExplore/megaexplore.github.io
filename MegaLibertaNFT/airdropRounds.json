@@ -1,14 +1,14 @@
 [
   {
-    "roundName": "AirdropRound0",
-    "roundId": "0x83dbc3485e5b97690b8905ce28422efd96cf595462d85fbc3f1a6145780714e7",
-    "root": "0x82fe3128db7b3d52e4146eecadd119abfd750d86d4983ff988426d0124db48eb",
+    "roundName": "AirdropRound1",
+    "roundId": "0x16f12ed950f3e06d06935efc593bd48b7d1fb3755e0851ab7f2b1682e69a1281",
+    "root": "0x6c2fcd494091db595e0ec4f4ec1d1262c1c7b55afef5628367c0c1d6d93cda05",
     "claims": [
       {
         "index": 0,
         "address": "0x1f034A26e252B452ef1C244b441534084FF06A90",
         "amount": "5215000",
-        "roundId": "0x83dbc3485e5b97690b8905ce28422efd96cf595462d85fbc3f1a6145780714e7",
+        "roundId": "0x16f12ed950f3e06d06935efc593bd48b7d1fb3755e0851ab7f2b1682e69a1281",
         "proof": []
       }
     ]
