@@ -12,5 +12,33 @@
         "proof": []
       }
     ]
+  },
+  {
+    "roundName": "AirdropRound2",
+    "roundId": "0xbffc30cb43e71a28941a3eac7fcf9b993b04f63a2d6d6d011f84a6c624803a3e",
+    "root": "0x851d3432a5dfad306486cb66a40a2c6d2b73443aa9ac7dcd83721567a5f870e0",
+    "claims": [
+      {
+        "index": 0,
+        "address": "0x1f034A26e252B452ef1C244b441534084FF06A90",
+        "amount": "5215000",
+        "roundId": "0xbffc30cb43e71a28941a3eac7fcf9b993b04f63a2d6d6d011f84a6c624803a3e",
+        "proof": []
+      }
+    ]
+  },
+  {
+    "roundName": "AirdropRound3",
+    "roundId": "0xa44e8c46d77d4dbf60c5838121a9f2e861703f7dc293d3806365fd5dad77e353",
+    "root": "0xcd9d9c9b7afe0afabd5d3aa3a65a2a9dedc0780df55c92e8d7483fb5fd4687a1",
+    "claims": [
+      {
+        "index": 0,
+        "address": "0x1f034A26e252B452ef1C244b441534084FF06A90",
+        "amount": "5215000",
+        "roundId": "0xa44e8c46d77d4dbf60c5838121a9f2e861703f7dc293d3806365fd5dad77e353",
+        "proof": []
+      }
+    ]
   }
 ]
