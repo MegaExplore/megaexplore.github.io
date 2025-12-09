@@ -1,63 +1,12 @@
 [
   {
-    "roundName": "AirdropRound1",
-    "roundId": "0x16f12ed950f3e06d06935efc593bd48b7d1fb3755e0851ab7f2b1682e69a1281",
-    "root": "0xa3cdc22fd6bdb7bf53a079c6e2363030c15740bddd5900af4e94a2530966ade4",
+    "roundName": "AirdropRound4",
+    "roundId": "0x05b17951bc255a1b233478fbac47894f1b93bfd727bcfe281998977cd513e365",
+    "root": "0xc2ce9fbdcccd6b083b9e3803e55936a03a57a0e47d775ce5a4453cfbc2f5f687",
     "totalClaimableAmount": "5215000",
     "claims": [
       {
         "index": "0",
-        "address": "0x1f034a26e252b452ef1c244b441534084ff06a90",
-        "amount": "5215000",
-        "roundId": "0x16f12ed950f3e06d06935efc593bd48b7d1fb3755e0851ab7f2b1682e69a1281",
-        "proof": []
-      }
-    ]
-  },
-  {
-    "roundName": "AirdropRound2",
-    "roundId": "0xbffc30cb43e71a28941a3eac7fcf9b993b04f63a2d6d6d011f84a6c624803a3e",
-    "root": "0x9af90637348ce0278fa87ed1a76f8ee9da54847583eb37b76a15509e1fec4b35",
-    "totalClaimableAmount": "10430000",
-    "claims": [
-      {
-        "index": "0",
-        "address": "0x1f034a26e252b452ef1c244b441534084ff06a90",
-        "amount": "5215000",
-        "roundId": "0x16f12ed950f3e06d06935efc593bd48b7d1fb3755e0851ab7f2b1682e69a1281",
-        "proof": []
-      },
-      {
-        "index": "1",
-        "address": "0x1f034a26e252b452ef1c244b441534084ff06a90",
-        "amount": "5215000",
-        "roundId": "0xbffc30cb43e71a28941a3eac7fcf9b993b04f63a2d6d6d011f84a6c624803a3e",
-        "proof": []
-      }
-    ]
-  },
-  {
-    "roundName": "AirdropRound4",
-    "roundId": "0x05b17951bc255a1b233478fbac47894f1b93bfd727bcfe281998977cd513e365",
-    "root": "0xa0651c9cbbb460db83eca8cc74a3e83b80d52e50a40caa073428d8825a9010e4",
-    "totalClaimableAmount": "15645000",
-    "claims": [
-      {
-        "index": "0",
-        "address": "0x1f034a26e252b452ef1c244b441534084ff06a90",
-        "amount": "5215000",
-        "roundId": "0xbffc30cb43e71a28941a3eac7fcf9b993b04f63a2d6d6d011f84a6c624803a3e",
-        "proof": []
-      },
-      {
-        "index": "1",
-        "address": "0x1f034a26e252b452ef1c244b441534084ff06a90",
-        "amount": "5215000",
-        "roundId": "0xbffc30cb43e71a28941a3eac7fcf9b993b04f63a2d6d6d011f84a6c624803a3e",
-        "proof": []
-      },
-      {
-        "index": "2",
         "address": "0x1f034a26e252b452ef1c244b441534084ff06a90",
         "amount": "5215000",
         "roundId": "0x05b17951bc255a1b233478fbac47894f1b93bfd727bcfe281998977cd513e365",
