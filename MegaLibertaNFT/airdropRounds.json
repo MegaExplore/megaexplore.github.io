@@ -58,5 +58,20 @@
         "proof": []
       }
     ]
+  },
+  {
+    "roundName": "Air5",
+    "roundId": "0x312ac9c085ce146fccf994f2b6883d16caf530aa0513ff4a221e97150a12b247",
+    "root": "0x168c466672e753dcbb545d0f60174dd16a3d91a154448669ad548fb275e3dde9",
+    "totalClaimableAmount": "26075000",
+    "claims": [
+      {
+        "index": "0",
+        "address": "0x1f034a26e252b452ef1c244b441534084ff06a90",
+        "amount": "26075000",
+        "roundId": "0x312ac9c085ce146fccf994f2b6883d16caf530aa0513ff4a221e97150a12b247",
+        "proof": []
+      }
+    ]
   }
 ]
