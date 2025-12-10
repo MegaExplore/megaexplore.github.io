@@ -1,30 +1,30 @@
 [
   {
-    "roundName": "A1",
-    "roundId": "0x3abd7e5c54b662a4fe3295d28c446a97375b69d72c3f83ae354b1e3abe7c482c",
-    "root": "0x38b980f7545a1cea044bb43f7f80412ead1763d881ad8ae22b178de2a1ca864d",
+    "roundName": "Air1",
+    "roundId": "0xb0c8d0b549703599cb9ec5ae2dba787ded39e92ef2497cb72181ebcb4a70c982",
+    "root": "0x0a58873ee1faaf4f4a513e4adc640d3e30e229a101f3fa8b74f91a88565cf00d",
     "totalClaimableAmount": "5215000",
     "claims": [
       {
         "index": "0",
         "address": "0x1f034a26e252b452ef1c244b441534084ff06a90",
         "amount": "5215000",
-        "roundId": "0x3abd7e5c54b662a4fe3295d28c446a97375b69d72c3f83ae354b1e3abe7c482c",
+        "roundId": "0xb0c8d0b549703599cb9ec5ae2dba787ded39e92ef2497cb72181ebcb4a70c982",
         "proof": []
       }
     ]
   },
   {
-    "roundName": "A2",
-    "roundId": "0x49f30438617c44dd78527f36b1f4e9286d2cb219d967e7e06f77a93cc340cd0b",
-    "root": "0xf91b0627e06554978691f4d4ea4c572a4bf13c85280be692e984dfe0d3a1632e",
+    "roundName": "Air2",
+    "roundId": "0x7748e002fa4aa46a76485832944eb23bd6cced82c3891525f076c81bd63aaf92",
+    "root": "0xfb47a5609ecc1d700565888b04e6a516f5085fc5d36364e7533b862ed5185ffe",
     "totalClaimableAmount": "10430000",
     "claims": [
       {
         "index": "0",
         "address": "0x1f034a26e252b452ef1c244b441534084ff06a90",
         "amount": "10430000",
-        "roundId": "0x49f30438617c44dd78527f36b1f4e9286d2cb219d967e7e06f77a93cc340cd0b",
+        "roundId": "0x7748e002fa4aa46a76485832944eb23bd6cced82c3891525f076c81bd63aaf92",
         "proof": []
       }
     ]
