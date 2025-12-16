@@ -1,0 +1,20 @@
+{
+  "rounds": [
+    {
+      "roundName": "A2",
+      "roundId": "0x49f30438617c44dd78527f36b1f4e9286d2cb219d967e7e06f77a93cc340cd0b",
+      "root": "0x4751b06b162e86df87c87d3331aecaca0ec9c96fd0ecb43c0c84ec909d27c8dd",
+      "totalClaimableAmount": "5215000",
+      "claims": [
+        {
+          "index": "0",
+          "address": "0x1f034a26e252b452ef1c244b441534084ff06a90",
+          "amount": "5215000",
+          "roundId": "0x49f30438617c44dd78527f36b1f4e9286d2cb219d967e7e06f77a93cc340cd0b",
+          "proof": []
+        }
+      ]
+    }
+  ],
+  "signature": "0xe973f3130db540018e0351fd862b6f628d361852c267e74f615ac8a33b9be8e021888ff709799c2b0f0cbf3d7d7774b83150ab33ba8dc73b33f145bc212d251e1b"
+}
