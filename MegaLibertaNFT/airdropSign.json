@@ -1,20 +1,20 @@
 {
   "rounds": [
     {
-      "roundName": "A2",
-      "roundId": "0x49f30438617c44dd78527f36b1f4e9286d2cb219d967e7e06f77a93cc340cd0b",
-      "root": "0x4751b06b162e86df87c87d3331aecaca0ec9c96fd0ecb43c0c84ec909d27c8dd",
+      "roundName": "A3",
+      "roundId": "0x20a43cb6505516338f02dbaa1ed45ce10202295099005f04e57b1f1f3903d7a9",
+      "root": "0x57f5d1bcb722fb2eb99f3df9e4a5b45ceb5b4e61ea81879e81a15896dbd6e853",
       "totalClaimableAmount": "5215000",
       "claims": [
         {
           "index": "0",
           "address": "0x1f034a26e252b452ef1c244b441534084ff06a90",
           "amount": "5215000",
-          "roundId": "0x49f30438617c44dd78527f36b1f4e9286d2cb219d967e7e06f77a93cc340cd0b",
+          "roundId": "0x20a43cb6505516338f02dbaa1ed45ce10202295099005f04e57b1f1f3903d7a9",
           "proof": []
         }
       ]
     }
   ],
-  "signature": "0xe973f3130db540018e0351fd862b6f628d361852c267e74f615ac8a33b9be8e021888ff709799c2b0f0cbf3d7d7774b83150ab33ba8dc73b33f145bc212d251e1b"
+  "signature": "0xa6ff8987c279a5aa38c6af9c9e0dbffd0eac30826f9f82e5d1803ad8a9b86fd4190b04d175391b1a77254767c73db40db6022261141a691dbf277ea4067147de1c"
 }
