@@ -14,7 +14,22 @@
           "proof": []
         }
       ]
+    },
+    {
+      "roundName": "A2",
+      "roundId": "0x49f30438617c44dd78527f36b1f4e9286d2cb219d967e7e06f77a93cc340cd0b",
+      "root": "0xf91b0627e06554978691f4d4ea4c572a4bf13c85280be692e984dfe0d3a1632e",
+      "totalClaimableAmount": "10430000",
+      "claims": [
+        {
+          "index": "0",
+          "address": "0x1f034a26e252b452ef1c244b441534084ff06a90",
+          "amount": "10430000",
+          "roundId": "0x49f30438617c44dd78527f36b1f4e9286d2cb219d967e7e06f77a93cc340cd0b",
+          "proof": []
+        }
+      ]
     }
   ],
-  "signature": "0x96ff6f04d270f566e8e4fe05b6d05ef7940bbff459a7349081d69c75d78c5b9f7c37df6cde1cd5058ed2642a328be037410490a6dd438ca4cad6ae880b6638771c"
+  "signature": "0x6e0bd66f0c3be2eecc2574969b75711594082eae54d815f2a6eb5a0d3bae6e4c583f6b4028807211dbf9d783a26d93fa2943f85e8ce4b3c7bdca75c708bddfba1b"
 }
