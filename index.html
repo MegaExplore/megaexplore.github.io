@@ -547,7 +547,24 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 </script>
 
+<script>
+    // 1. Select all links inside the mobile menu
+    const navLinks = document.querySelectorAll('.nav-link');
+    // 2. Select the collapsible menu itself
+    const menuToggle = document.getElementById('navbarCollapse');
+    // 3. Create a Bootstrap collapse instance
+    const bsCollapse = new bootstrap.Collapse(menuToggle, {toggle: false});
 
+    // 4. Add a click event to each link
+    navLinks.forEach((l) => {
+        l.addEventListener('click', () => {
+            // Only close if the menu is actually open (mobile mode)
+            if (menuToggle.classList.contains('show')) {
+                bsCollapse.hide();
+            }
+        });
+    });
+</script>
 
 
 
